@@ -8,13 +8,6 @@ __pycache__/
 
 .ipynb_checkpoints/
 
-data/raw/*
-data/processed/*
-data/external/*
-!data/raw/.gitkeep
-!data/processed/.gitkeep
-!data/external/.gitkeep
-
 *.log
 .DS_Store
 Thumbs.db
