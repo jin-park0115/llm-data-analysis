@@ -1,0 +1,61 @@
+{
+  "task": "binary_classification",
+  "target": "Survived",
+  "positive_class": 1,
+  "raw_input_columns": [
+    "Pclass",
+    "Sex",
+    "Age",
+    "SibSp",
+    "Parch",
+    "Fare",
+    "Embarked"
+  ],
+  "model_feature_columns": [
+    "Pclass",
+    "Sex",
+    "Age",
+    "SibSp",
+    "Parch",
+    "Fare",
+    "Embarked",
+    "FamilySize",
+    "IsAlone"
+  ],
+  "numeric_features": [
+    "Age",
+    "SibSp",
+    "Parch",
+    "Fare",
+    "FamilySize"
+  ],
+  "categorical_features": [
+    "Pclass",
+    "Sex",
+    "Embarked",
+    "IsAlone"
+  ],
+  "prepared_feature_columns": [
+    "Age",
+    "SibSp",
+    "Parch",
+    "Fare",
+    "FamilySize",
+    "Pclass_1",
+    "Pclass_2",
+    "Pclass_3",
+    "Sex_female",
+    "Sex_male",
+    "Embarked_C",
+    "Embarked_Q",
+    "Embarked_S",
+    "IsAlone_0",
+    "IsAlone_1"
+  ],
+  "derived_features": [
+    "FamilySize",
+    "IsAlone"
+  ],
+  "scaling": "StandardScaler",
+  "final_estimator": "LogisticRegression"
+}
