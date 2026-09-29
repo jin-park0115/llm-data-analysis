@@ -1,0 +1,7 @@
+﻿check,value,status
+forbidden_feature_overlap,0 overlap (target/id leaked: False),PASS
+strict_train_before_test,Train Max Date < Test Min Date (True),PASS
+selected_model_exists_in_train_cv,Selected [Random Forest] exists in CV,PASS
+final_test_contains_baseline,Baseline Mean evaluated in Test: True,PASS
+final_test_contains_frozen_selected_model,Frozen Model [Random Forest] evaluated in Test: True,PASS
+test_rows_for_r2,Test Rows = 47 (>= 2 required for R2),PASS

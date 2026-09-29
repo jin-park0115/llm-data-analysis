@@ -1,0 +1,2 @@
+﻿Train 시작일,Train 종료일,Train 행 수,Final Test 시작일,Final Test 종료일,Final Test 행 수,날짜 Overlap 여부,시간 순서 정상 여부
+2025-07-01,2026-06-10,184,2026-06-11,2028-12-31,47,X (정상),O (정상)

@@ -1,0 +1,5 @@
+=== Train CV 기반 모델 선택 기록 ===
+- Selected Model: Random Forest
+- 선택 기준: 비베이스라인 모델 중 Train CV MAE 최저
+- 근거가 된 cv_MAE_mean: 564,041.60원
+- Final Test를 보기 전에 선택했는가: 예

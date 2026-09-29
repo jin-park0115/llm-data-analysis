@@ -1,0 +1,4 @@
+﻿Model,cv_MAE_mean,cv_MAE_std,cv_RMSE_mean,cv_R2_mean
+Baseline (Mean),488090.35,95090.78,644717.27,-0.4848
+Linear Regression,882919.63,165872.54,1502061.66,-12.005
+Random Forest,564041.6,212888.75,1034550.94,-4.3523
