@@ -1,0 +1,422 @@
+{
+  "task": "binary_classification",
+  "target": "is_cancelled",
+  "positive_class": 1,
+  "prediction_time": "주문 생성 시점",
+  "model_name": "Random Forest",
+  "threshold": 0.5,
+  "numeric_features": [
+    "age"
+  ],
+  "categorical_features": [
+    "order_month",
+    "order_dayofweek",
+    "payment_method",
+    "gender",
+    "city"
+  ],
+  "category_options": {
+    "order_month": [
+      "2025-07",
+      "2025-08",
+      "2025-09",
+      "2025-10",
+      "2025-11",
+      "2025-12",
+      "2026-01",
+      "2026-02",
+      "2026-03",
+      "2026-04",
+      "2026-05",
+      "2026-06",
+      "2026-07",
+      "2026-08",
+      "2028-12"
+    ],
+    "order_dayofweek": [
+      "Friday",
+      "Monday",
+      "Saturday",
+      "Sunday",
+      "Thursday",
+      "Tuesday",
+      "Wednesday"
+    ],
+    "payment_method": [
+      "bank_transfer",
+      "card",
+      "kakao_pay",
+      "naver_pay"
+    ],
+    "gender": [
+      "F",
+      "M"
+    ],
+    "city": [
+      "Unknown",
+      "고양",
+      "광주",
+      "대구",
+      "대전",
+      "부산",
+      "서울",
+      "성남",
+      "수원",
+      "울산",
+      "인천"
+    ]
+  },
+  "numeric_ranges": {
+    "age": {
+      "min": 18.0,
+      "max": 150.0,
+      "median": 49.0
+    }
+  },
+  "split_sizes": {
+    "train": 145,
+    "validation": 49,
+    "test": 49
+  },
+  "class_counts": {
+    "0": 180,
+    "1": 63
+  },
+  "validation_model_comparison": [
+    {
+      "Model": "Dummy",
+      "Accuracy": 0.7347,
+      "Precision": 0.0,
+      "Recall": 0.0,
+      "F1": 0.0
+    },
+    {
+      "Model": "Logistic Regression",
+      "Accuracy": 0.7347,
+      "Precision": 0.5,
+      "Recall": 0.0769,
+      "F1": 0.1333
+    },
+    {
+      "Model": "Random Forest",
+      "Accuracy": 0.6531,
+      "Precision": 0.4,
+      "Recall": 0.6154,
+      "F1": 0.4848
+    }
+  ],
+  "validation_threshold_metrics": [
+    {
+      "Threshold": 0.1,
+      "Precision": 0.2653,
+      "Recall": 1.0,
+      "F1-Score": 0.4194
+    },
+    {
+      "Threshold": 0.15,
+      "Precision": 0.2653,
+      "Recall": 1.0,
+      "F1-Score": 0.4194
+    },
+    {
+      "Threshold": 0.2,
+      "Precision": 0.2653,
+      "Recall": 1.0,
+      "F1-Score": 0.4194
+    },
+    {
+      "Threshold": 0.25,
+      "Precision": 0.2653,
+      "Recall": 1.0,
+      "F1-Score": 0.4194
+    },
+    {
+      "Threshold": 0.3,
+      "Precision": 0.2653,
+      "Recall": 1.0,
+      "F1-Score": 0.4194
+    },
+    {
+      "Threshold": 0.35,
+      "Precision": 0.2653,
+      "Recall": 1.0,
+      "F1-Score": 0.4194
+    },
+    {
+      "Threshold": 0.4,
+      "Precision": 0.3095,
+      "Recall": 1.0,
+      "F1-Score": 0.4727
+    },
+    {
+      "Threshold": 0.45,
+      "Precision": 0.2778,
+      "Recall": 0.7692,
+      "F1-Score": 0.4082
+    },
+    {
+      "Threshold": 0.5,
+      "Precision": 0.4,
+      "Recall": 0.6154,
+      "F1-Score": 0.4848
+    },
+    {
+      "Threshold": 0.55,
+      "Precision": 0.5,
+      "Recall": 0.0769,
+      "F1-Score": 0.1333
+    },
+    {
+      "Threshold": 0.6,
+      "Precision": 0.0,
+      "Recall": 0.0,
+      "F1-Score": 0.0
+    },
+    {
+      "Threshold": 0.65,
+      "Precision": 0.0,
+      "Recall": 0.0,
+      "F1-Score": 0.0
+    },
+    {
+      "Threshold": 0.7,
+      "Precision": 0.0,
+      "Recall": 0.0,
+      "F1-Score": 0.0
+    },
+    {
+      "Threshold": 0.75,
+      "Precision": 0.0,
+      "Recall": 0.0,
+      "F1-Score": 0.0
+    },
+    {
+      "Threshold": 0.8,
+      "Precision": 0.0,
+      "Recall": 0.0,
+      "F1-Score": 0.0
+    },
+    {
+      "Threshold": 0.85,
+      "Precision": 0.0,
+      "Recall": 0.0,
+      "F1-Score": 0.0
+    },
+    {
+      "Threshold": 0.9,
+      "Precision": 0.0,
+      "Recall": 0.0,
+      "F1-Score": 0.0
+    }
+  ],
+  "test_metrics": {
+    "accuracy": 0.5714,
+    "precision": 0.2857,
+    "recall": 0.5,
+    "f1": 0.3636
+  },
+  "test_confusion_matrix": {
+    "tn": 22,
+    "fp": 15,
+    "fn": 6,
+    "tp": 6
+  },
+  "test_probabilities": [
+    {
+      "actual": 0,
+      "probability": 0.48
+    },
+    {
+      "actual": 0,
+      "probability": 0.4514
+    },
+    {
+      "actual": 1,
+      "probability": 0.4445
+    },
+    {
+      "actual": 0,
+      "probability": 0.4215
+    },
+    {
+      "actual": 0,
+      "probability": 0.5364
+    },
+    {
+      "actual": 1,
+      "probability": 0.5212
+    },
+    {
+      "actual": 1,
+      "probability": 0.4625
+    },
+    {
+      "actual": 0,
+      "probability": 0.4939
+    },
+    {
+      "actual": 0,
+      "probability": 0.313
+    },
+    {
+      "actual": 0,
+      "probability": 0.4083
+    },
+    {
+      "actual": 0,
+      "probability": 0.4501
+    },
+    {
+      "actual": 1,
+      "probability": 0.5632
+    },
+    {
+      "actual": 1,
+      "probability": 0.4922
+    },
+    {
+      "actual": 0,
+      "probability": 0.4686
+    },
+    {
+      "actual": 0,
+      "probability": 0.434
+    },
+    {
+      "actual": 1,
+      "probability": 0.4992
+    },
+    {
+      "actual": 0,
+      "probability": 0.4502
+    },
+    {
+      "actual": 0,
+      "probability": 0.5652
+    },
+    {
+      "actual": 0,
+      "probability": 0.4646
+    },
+    {
+      "actual": 0,
+      "probability": 0.3307
+    },
+    {
+      "actual": 0,
+      "probability": 0.5368
+    },
+    {
+      "actual": 0,
+      "probability": 0.5594
+    },
+    {
+      "actual": 0,
+      "probability": 0.3754
+    },
+    {
+      "actual": 0,
+      "probability": 0.5455
+    },
+    {
+      "actual": 0,
+      "probability": 0.5103
+    },
+    {
+      "actual": 0,
+      "probability": 0.538
+    },
+    {
+      "actual": 0,
+      "probability": 0.4638
+    },
+    {
+      "actual": 0,
+      "probability": 0.4303
+    },
+    {
+      "actual": 1,
+      "probability": 0.5715
+    },
+    {
+      "actual": 1,
+      "probability": 0.4503
+    },
+    {
+      "actual": 0,
+      "probability": 0.5256
+    },
+    {
+      "actual": 0,
+      "probability": 0.5481
+    },
+    {
+      "actual": 0,
+      "probability": 0.363
+    },
+    {
+      "actual": 0,
+      "probability": 0.523
+    },
+    {
+      "actual": 0,
+      "probability": 0.4494
+    },
+    {
+      "actual": 0,
+      "probability": 0.5603
+    },
+    {
+      "actual": 0,
+      "probability": 0.5468
+    },
+    {
+      "actual": 1,
+      "probability": 0.5179
+    },
+    {
+      "actual": 0,
+      "probability": 0.4658
+    },
+    {
+      "actual": 0,
+      "probability": 0.4742
+    },
+    {
+      "actual": 0,
+      "probability": 0.3846
+    },
+    {
+      "actual": 1,
+      "probability": 0.5469
+    },
+    {
+      "actual": 1,
+      "probability": 0.5403
+    },
+    {
+      "actual": 0,
+      "probability": 0.5161
+    },
+    {
+      "actual": 1,
+      "probability": 0.4795
+    },
+    {
+      "actual": 0,
+      "probability": 0.5391
+    },
+    {
+      "actual": 0,
+      "probability": 0.5763
+    },
+    {
+      "actual": 0,
+      "probability": 0.4689
+    },
+    {
+      "actual": 0,
+      "probability": 0.3616
+    }
+  ]
+}

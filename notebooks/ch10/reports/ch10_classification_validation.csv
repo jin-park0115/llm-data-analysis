@@ -1,0 +1,9 @@
+Contract,Status
+binary_target_contract,PASS
+forbidden_feature_overlap,PASS
+strict_merge_contract,PASS
+all_splits_have_two_classes,PASS
+selected_model_from_validation,PASS
+selected_threshold_from_validation,FAIL
+public_prediction_privacy,PASS
+test_rows_for_metrics,PASS
